@@ -1,0 +1,71 @@
+/*h1タグの背景をorangeに*/
+h1 {
+ background-color: orange;
+}
+
+
+/*パディングやボーダー幅を指定して絶対配置する*/
+form {
+  position: relative;
+}
+
+input[type="search"] {
+  width: 200px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cc9900;
+  border-right: 0; /* 右ボーダーなし */
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  border-radius: 5px 0 0 5px; /* 左上と左下に半径5pxの角丸 */
+  box-shadow: 0 0 5px #cc9966 inset; /* ボックスの内側にシャドウ */
+}
+input[type="submit"] {
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 1px solid #cc9900;
+  position: absolute;
+  top: 0;
+  left: 221px;
+  font-weight: bold;
+  letter-spacing: 10px; /* 文字間隔（10px追加） */
+  padding: 10px 10px 10px 20px; /* 右パディングをletter-spacing分差し引く */
+  background: linear-gradient(#ffcc99, #ff9900); /* グラデーション */
+  color: #ffffff;
+  border-radius: 0 5px 5px 0; /* 右上と右下に半径5pxの角丸 */
+  box-shadow: 1px 1px 1px 0 #ffffcc inset, -1px -1px 3px 0 #ff9900 inset; /* ボックスの内側にハイライトとシャドウ */
+  cursor: pointer; /* リンクカーソル */
+  text-shadow: 0 -1px 0 #cc9900; /* テキストの上方向に1pxの影を付ける */
+}
+
+input::-moz-focus-inner { /* Firefoxのボーダーとパディングをリセット */
+  border: 0;
+  padding: 0;
+}
+
+
+/*フォーカス時とホバー時のスタイル*/
+input[type="search"]:focus {
+  background-color: #ffffe0;
+}
+input[type="submit"]:hover {
+  background: linear-gradient(#ff9900, #ffcc99); /* グラデーション */
+  box-shadow: -1px -1px 1px 0 #ffffcc inset, 1px 1px 3px 0 #ff9900 inset; /* ボックスの内側にハイライトとシャドウ */
+}
+input {
+  outline: none; /* アウトラインをリセット */
+}
+
+.textbox1
+
+/*検索窓をwishの横にしようとしてる*/
+/*.title {
+  float: left;
+}
+
+.search-box {
+  float: left;
+}*/

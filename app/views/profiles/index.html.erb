@@ -1,0 +1,14 @@
+<div class="contents">
+<!-- <form>
+<input type="search" class="text">
+<input type="submit" value="検索">
+</form> -->
+</div>
+<div>
+</div>
+
+<ul>
+  <% @search.each do |name| %>
+    <li><p><%= name.name %><p></li>
+  <% end %>
+</ul>

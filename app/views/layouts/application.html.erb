@@ -1,0 +1,34 @@
+<!-- 共通部分のコードをこのappliation.html.erbに書く -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Wish</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <header>
+    <div class="heading">
+      <div class="title">
+      　<h1 class="title">Wish</h1>
+      </div>
+      <div class="search-box">
+        <%= form_tag('/', method: :get) do %>
+          <input type="search" class="text" name="keyword" value="" placeholder="作品名で検索">
+          <input type="submit" value="検索">
+      　<% end %>
+
+
+
+
+
+      </div>
+    </div>
+    </header>
+
+<%= yield %>
+<!-- #index.html等、profiles配下のコードがここに入る。 -->
+</body>
+</html>
