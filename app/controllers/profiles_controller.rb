@@ -1,7 +1,7 @@
 class ProfilesController < ApplicationController
 
   def index
-    @information = Profile.find(1)
+    @information = Profile.all
     @search = Profile.where('name LIKE(?)', "%#{params[:keyword]}%")
   end
 
@@ -20,6 +20,6 @@ class ProfilesController < ApplicationController
 
   private
   def create_params
-    params.permit(:name, :current_job, :past_job, :business_skills, :private_slills, :business_connection, :private_connection, :qualification)
+    params.require(:profile).permit(:name, :current_job, :past_job, :business_skill, :private_skill, :business_connection, :private_connection, :qualification)
   end
 end

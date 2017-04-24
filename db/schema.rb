@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 20170315063003) do
     t.string   "name",                              null: false
     t.text     "current_job",         limit: 65535, null: false
     t.text     "past_job",            limit: 65535, null: false
-    t.text     "business_skills",     limit: 65535, null: false
-    t.text     "private_skills",      limit: 65535, null: false
+    t.text     "business_skill",      limit: 65535, null: false
+    t.text     "private_skill",       limit: 65535, null: false
     t.text     "business_connection", limit: 65535, null: false
     t.text     "private_connection",  limit: 65535, null: false
     t.text     "qualification",       limit: 65535, null: false
