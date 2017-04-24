@@ -8,7 +8,9 @@
 </div>
 
 <ul>
-  <% @search.each do |name| %>
-    <li><p><%= name.name %><p></li>
+  <% if @search.present? %>
+    <% @search.each do |name| %>
+      <li><p><%= name.name %><p></li>
+    <% end %>
   <% end %>
 </ul>

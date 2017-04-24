@@ -2,7 +2,9 @@ class ProfilesController < ApplicationController
 
   def index
     @information = Profile.all
-    @search = Profile.where('name LIKE(?)', "%#{params[:keyword]}%")
+    if params[:keyword].present?
+      @search = Profile.where('name LIKE(?)', "%#{params[:keyword]}%")
+    end
   end
 
   def new
