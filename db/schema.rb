@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -13,16 +12,17 @@
 
 ActiveRecord::Schema.define(version: 20170315063003) do
 
-  create_table "profiles", force: :cascade do |t|
-    t.string   "name",              limit: 255,   null: false
-    t.text     "current_job",       limit: 65535, null: false
-    t.text     "past_job",          limit: 65535, null: false
-    t.text     "youcan_job",        limit: 65535, null: false
-    t.text     "youcan_notjoc",     limit: 65535, null: false
-    t.text     "connection_notjob", limit: 65535, null: false
-    t.text     "qualification",     limit: 65535, null: false
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+  create_table "profiles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
+    t.string   "name",                              null: false
+    t.text     "current_job",         limit: 65535, null: false
+    t.text     "past_job",            limit: 65535, null: false
+    t.text     "business_skill",      limit: 65535, null: false
+    t.text     "private_skill",       limit: 65535, null: false
+    t.text     "business_connection", limit: 65535, null: false
+    t.text     "private_connection",  limit: 65535, null: false
+    t.text     "qualification",       limit: 65535, null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
 end
