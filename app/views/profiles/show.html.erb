@@ -1,3 +1,7 @@
-<p>詳細ページ</p>
-<%= @profile.name %><br />
+<p></p>
+<p>名前  :<br/><%= @profile.name %></p>
+<p>現在の業務  :<br/><%= @profile.current_job %></p>
+<p>過去の業務  :<br/><%= @profile.past_job %></p>
+<p>資格  :<br/><%= @profile.qualification %></p>
+
 <%= link_to "編集画面へ", edit_profile_path(@profile) %>

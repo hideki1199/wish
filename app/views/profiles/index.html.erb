@@ -1,10 +1,15 @@
 <div class="contents">
-<!-- <form>
-<input type="search" class="text">
-<input type="submit" value="検索">
-</form> -->
-</div>
-<div>
+<div class="heading">
+      <div class="title">
+      　<h1 class="title">Wish</h1>
+      </div>
+      <div class="search-box">
+        <%= form_tag('/', method: :get) do %>
+          <input type="search" class="text" name="keyword" value="" placeholder="">
+          <input type="submit" value="検索">
+      　<% end %>
+      </div>
+    </div>
 </div>
 
 <ul>

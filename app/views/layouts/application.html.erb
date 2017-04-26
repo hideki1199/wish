@@ -9,24 +9,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= link_to "新規作成", new_profile_path %>
     <header>
-    <div class="heading">
-      <div class="title">
-      　<h1 class="title">Wish</h1>
-      </div>
-      <div class="search-box">
-        <%= form_tag('/', method: :get) do %>
-          <input type="search" class="text" name="keyword" value="" placeholder="作品名で検索">
-          <input type="submit" value="検索">
-      　<% end %>
-
-
-
-
-
-      </div>
-    </div>
+    <%= link_to "新規作成", new_profile_path %>
     </header>
 
 <%= yield %>
