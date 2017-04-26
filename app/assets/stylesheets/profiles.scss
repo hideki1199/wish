@@ -1,4 +1,9 @@
 .contents {
-  width: 300px;
-  margin: 0 auto;
+  height: 100px;
+}
+
+.test {
+  clear: both;
+  display: block;
+  content: "";
 }

@@ -3,6 +3,10 @@ h1 {
  background-color: orange;
 }
 
+.title {
+  width: 100%;
+  background-color: orange;
+}
 
 /*パディングやボーダー幅を指定して絶対配置する*/
 form {
@@ -23,6 +27,7 @@ input[type="search"] {
   border-radius: 5px 0 0 5px; /* 左上と左下に半径5pxの角丸 */
   box-shadow: 0 0 5px #cc9966 inset; /* ボックスの内側にシャドウ */
 }
+
 input[type="submit"] {
   font-size: 14px;
   padding: 10px 20px;
@@ -56,16 +61,5 @@ input[type="submit"]:hover {
   box-shadow: -1px -1px 1px 0 #ffffcc inset, 1px 1px 3px 0 #ff9900 inset; /* ボックスの内側にハイライトとシャドウ */
 }
 input {
-  outline: none; /* アウトラインをリセット */
+  outline: none;
 }
-
-.textbox1
-
-/*検索窓をwishの横にしようとしてる*/
-/*.title {
-  float: left;
-}
-
-.search-box {
-  float: left;
-}*/
