@@ -16,7 +16,7 @@
 <ul>
   <% if @search.present? %>
     <% @search.each do |name| %>
-      <%= link_to(name) do %> 
+      <%= link_to(name) do %>
         <li><p><%= name.name %></p></li>
       <% end %>
     <% end %>
