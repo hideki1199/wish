@@ -3,7 +3,7 @@ class ProfilesController < ApplicationController
   def index
     @information = Profile.all
     if params[:keyword].present?
-      @search = Profile.where("name LIKE :name OR current_job LIKE :name", name: "%#{params[:keyword]}%")
+      @search = Profile.where("name LIKE :name OR current_job LIKE :name OR past_job LIKE :name OR business_skill LIKE :name OR private_skill LIKE :name OR business_connection LIKE :name OR private_connection LIKE :name OR qualification LIKE :name", name: "%#{params[:keyword]}%")
     end
   end
 
